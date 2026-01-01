@@ -29,6 +29,7 @@ Targeted DAX queries regarding research or business questions can be found (here
 Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the methodology effectively captures shoaling wave characteristics. The small discrepancies in the trend result from wave transformations between offshore and nearshore conditions, which are expected due to bathymetric changes and shoaling processes, particularly as the model station is located approximately 10 km offshore from the study area. The weakest agreement is observed between Hs_vid and Hs_M3. In contrast, Hs_vid shows better agreement with Hs_1 and Hs_M2, with mean absolute percentage errors (MAPE) of 33% and 32%, respectively, which fall within a reasonable accuracy range for nearshore wave model performance.
 
 
+
 ![Wave Height Validation](Hs_M.jpg)
 *Video-derived vs. model-predicted significant wave heights showing R² = 0.94 and 97.5% agreement (Bias = 0.03m, RMSE = 0.17m)*
 
