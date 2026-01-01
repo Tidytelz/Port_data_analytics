@@ -27,7 +27,7 @@ Targeted DAX queries regarding research or business questions can be found (here
 
 #Executive Summary 
 
-
+![image alt]([image_ur](https://github.com/Tidytelz/Port_data_analytics/blob/main/Hs_M.jpg?raw=true)
 
 
 
