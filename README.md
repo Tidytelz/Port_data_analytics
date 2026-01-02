@@ -14,8 +14,8 @@ Insights and recommendations are presented across three key aspects:
 * **Suitability of method application**: Assessment of historical trends to identify periods most suitable for the application of the proposed methodology.
 
 An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)  
-SQL queries for Database setup and data loading can be found  [here]
-SQL queries loading to organise, and prepare data for the dashboard can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)  
+SQL queries for database setup and data loading can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)     
+SQL queries loading to organise and prepare data for the dashboard can be found [here]
 Targeted DAX queries regarding research or business questions can be found [here]  
 
 
