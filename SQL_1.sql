@@ -3,8 +3,8 @@ DROP TABLE IF EXISTS New_video_2025;
 
 CREATE TABLE New_video_2025 (
     Date_time VARCHAR(20),
-    Raw_Hs FLOAT,
-    Corrected_Hs FLOAT
+    Hs_vid FLOAT
+   
 );
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/New_video_2025.csv'
@@ -13,10 +13,10 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
-(@Date_time, @Raw_Hs)
+(@Date_time, @Hs_vid)
 SET
-    Date_time = NULLIF(@dt, ''),
-    Raw_Hs = NULLIF(@Raw_Hs, '')
+    Date_time = NULLIF(@Date_time, ''),
+    Raw_Hs = NULLIF(@Hs_vid, '')
    
  ;
  
