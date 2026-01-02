@@ -13,7 +13,7 @@ Insights and recommendations are presented across three key aspects:
 * **Environmental influence**: Analysis of the effects of environmental factors, such as wind speed, on the estimated wave parameters.
 * **Suitability of method application**: Assessment of historical trends to identify periods most suitable for the application of the proposed methodology.
 
-Papers on the wave height estimation methodology can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/blob/c9f2df0c0462e76daa0aa42b3290b9be17e91253/WP8_Wave%20Height%20Estimation%20Methods%20for%20Non-Breaking%20Waves%20Using%20Video%20Images.pdf)  
+A Paper on the wave height estimation methodology can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/blob/c9f2df0c0462e76daa0aa42b3290b9be17e91253/WP8_Wave%20Height%20Estimation%20Methods%20for%20Non-Breaking%20Waves%20Using%20Video%20Images.pdf)  
 An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)    
 SQL queries for database setup and data loading can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)     
 SQL queries loading to organise and prepare data for the dashboard can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/b1eac36ec943c417a2bcb074016142611ce3956a/SQL_2.sql)  
@@ -33,7 +33,7 @@ Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the 
 
 
 ![Wave Height Validation](Hs_M.jpg)
-*Video-derived vs. model-predicted significant wave heights showing R² = 0.94 and 97.5% agreement (Bias = 0.03m, RMSE = 0.17m)*
+
 
 ## **Environmental influence**
 In contrast, Hs_vid shows better agreement with Hs_1 and Hs_M2, with mean absolute percentage errors (MAPE) of 33% and 32%, respectively, which fall within a reasonable accuracy range for nearshore wave model performance. Wind speed exhibits a more consistent pattern for Hs_vid, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
