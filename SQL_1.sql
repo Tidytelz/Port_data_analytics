@@ -2,7 +2,7 @@
 DROP TABLE IF EXISTS New_video_2025;
 
 CREATE TABLE New_video_2025 (
-    dt VARCHAR(20),
+    Date_time VARCHAR(20),
     Raw_Hs FLOAT,
     Corrected_Hs FLOAT
 );
