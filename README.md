@@ -39,5 +39,7 @@ Notably, discrepancies in Hs_vid increase when wind speed exceeds 7 m/s, which c
 
 ![Kpi](KPI_Vel.jpg)
 
+Therefore, identifying optimal deployment conditions and measurement windows is critical for operational efficiency and cost-effectiveness. Analysis of historical wind speed data below 7 m/s between 2015 and 2024 reveals that the method achieves exceptional year-round operational availability, exceeding 70% for most years. Even during the least favorable conditions in 2016 and 2019, operational availability remained at 65%, translating to approximately 237 days per year of viable measurement conditions. This high temporal availability (65-75% annually) enables continuous coastal monitoring at significantly lower costs compared to traditional in-situ sensors, which require permanent installation and ongoing maintenance. The methodology's reliable operational window makes it suitable for commercial applications in port operations, coastal infrastructure monitoring, and maritime safety assessments, where wave data is essential for decision-making but budget constraints limit permanent sensor installations. Additionally, the UAV-based approach offers operational flexibility—deployments can be scheduled during optimal weather windows, avoiding equipment damage during extreme conditions while maintaining sufficient data coverage for seasonal trend analysis and engineering design parameters.
 
-Therefore, the historic Hs data for vel < 7m/s shows that 
+
+![Vel](Vel_his.jpg)
