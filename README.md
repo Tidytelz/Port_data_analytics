@@ -40,4 +40,4 @@ Notably, discrepancies in Hs_vid increase when wind speed exceeds 7 m/s, which c
 ![Kpi](KPI_Vel.jpg)
 
 
-
+Therefore, the historic Hs data for vel < 7m/s shows that 
