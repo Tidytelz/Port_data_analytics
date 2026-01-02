@@ -25,21 +25,38 @@ Targeted DAX queries regarding research or business questions can be found (here
 
 
 
-# Executive Summary 
-Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the methodology effectively captures shoaling wave characteristics. The small discrepancies in the trend result from wave transformations between offshore and nearshore conditions, which are expected due to bathymetric changes and shoaling processes, particularly as the model station is located approximately 10 km offshore from the study area. The weakest agreement is observed between Hs_vid and Hs_M3. In contrast, Hs_vid shows better agreement with Hs_1 and Hs_M2, with mean absolute percentage errors (MAPE) of 33% and 32%, respectively, which fall within a reasonable accuracy range for nearshore wave model performance.
+## **Method reliability**
+Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the methodology effectively captures shoaling wave characteristics. The small discrepancies in the trend result from wave transformations between offshore and nearshore conditions, which are expected due to bathymetric changes and shoaling processes, particularly as the model station is located approximately 10 km offshore from the study area. The weakest agreement is observed between Hs_vid and Hs_M3. 
 
 
 
 ![Wave Height Validation](Hs_M.jpg)
 *Video-derived vs. model-predicted significant wave heights showing R² = 0.94 and 97.5% agreement (Bias = 0.03m, RMSE = 0.17m)*
 
-
-Wind speed exhibits a more consistent pattern for Hs_vid, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
+## **Environmental influence**
+In contrast, Hs_vid shows better agreement with Hs_1 and Hs_M2, with mean absolute percentage errors (MAPE) of 33% and 32%, respectively, which fall within a reasonable accuracy range for nearshore wave model performance. Wind speed exhibits a more consistent pattern for Hs_vid, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
 Notably, discrepancies in Hs_vid increase when wind speed exceeds 7 m/s, which can be attributed to two primary factors: (1) whitecap formation during rough sea states, and (2) camera shake induced by strong winds. Since the methodology measures the inverted shadow characteristics of wave features, any high-intensity features (e.g., breaking waves or whitecaps) within the measurement area result in inaccurate estimation. Additionally, camera shake degrades feature detection accuracy, further compromising measurement quality under high wind conditions.  
 
 ![Kpi](KPI_Vel.jpg)
 
-Analysis of historical wind speed data below 7 m/s between 2015 and 2024 reveals that the method achieves exceptional year-round operational availability, exceeding 70% for most years. Even during the least favorable conditions in 2016 and 2019, operational availability remained at 65%, translating to approximately 237 days per year of viable measurement conditions. This high temporal availability (65-75% annually) enables continuous coastal monitoring at significantly lower costs compared to traditional in-situ sensors, which require permanent installation and ongoing maintenance. The methodology's reliable operational window makes it suitable for commercial applications in port operations, coastal infrastructure monitoring, and maritime safety assessments, where wave data is essential for decision-making but budget constraints limit permanent sensor installations. Additionally, the UAV-based approach offers operational flexibility—deployments can be scheduled during optimal weather windows, avoiding equipment damage during extreme conditions while maintaining sufficient data coverage for seasonal trend analysis and engineering design parameters.
-
+## **Suitability of method application**
+Analysis of historical wind speed data below 7 m/s between 2015 and 2024 reveals that the method achieves exceptional year-round operational availability, exceeding 70% for most years. Even during the least favorable conditions in 2016 and 2019, operational availability remained at 65%, translating to approximately 237 days per year of viable measurement conditions. This high temporal availability (65-75% annually) enables continuous coastal monitoring at significantly lower costs compared to traditional in-situ sensors, which require permanent installation and ongoing maintenance.
 
 ![Vel](Vel_his.jpg)
+
+## **Conclusions**
+This UAV-based wave measurement system demonstrates strong potential for commercial coastal monitoring applications, particularly in port operations, infrastructure monitoring, and maritime safety—contexts where traditional permanent sensor networks are cost-prohibitive.
+
+**Key Findings**:
+
+- High operational availability: 65-75% year-round deployment capability (2015-2019 analysis)
+- Reasonable accuracy: MAPE of 32-33% for nearshore wave height estimation
+- Cost-effective alternative: Significantly lower deployment costs compared to permanent ADCP installations
+
+### **Recommendations for Operational Deployment**
+**Camera Stabilization**: Reinforce fixed camera mounting systems to reduce vibration-induced errors during high wind conditions (>7 m/s), improving measurement reliability during rough sea states.
+
+**Implement a dual approach combining:** Fixed cameras for Continuous monitoring of primary areas of interest and UAV deployments for Flexible missions for extended spatial coverage, targeting regions outside fixed camera field of view during optimal weather windows
+
+**Quality Control Protocols**: Establish automated filtering based on wind speed thresholds and whitecap detection to ensure data reliability and minimize post-processing requirements.
+This system offers a scalable, budget-friendly solution for coastal monitoring programs requiring reliable wave data without the capital investment and maintenance overhead of extensive permanent sensor networks—ideal for port authorities, coastal engineering consultancies, and renewable energy site assessments.
