@@ -13,7 +13,7 @@ Insights and recommendations are presented across three key aspects:
 * **Environmental influence**: Analysis of the effects of environmental factors, such as wind speed, on the estimated wave parameters.
 * **Suitability of method application**: Assessment of historical trends to identify periods most suitable for the application of the proposed methodology.
 
-Papers on the developed methodology can be downloaded [here]
+Papers on the wave height estimation methodology can be downloaded [here]
 An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)  
 SQL queries for database setup and data loading can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)     
 SQL queries loading to organise and prepare data for the dashboard can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/b1eac36ec943c417a2bcb074016142611ce3956a/SQL_2.sql)  
