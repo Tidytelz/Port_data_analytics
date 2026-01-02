@@ -15,7 +15,7 @@ Insights and recommendations are presented across three key aspects:
 
 An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)  
 SQL queries for database setup and data loading can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)     
-SQL queries loading to organise and prepare data for the dashboard can be found [here]
+SQL queries loading to organise and prepare data for the dashboard can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/b1eac36ec943c417a2bcb074016142611ce3956a/SQL_2.sql)  
 Targeted DAX queries regarding research or business questions can be found [here]  
 
 
