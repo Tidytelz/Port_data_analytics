@@ -36,6 +36,7 @@ Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the 
 
 Again, Wind speed exhibits a more consistent pattern across all Hs_M cases, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
 
+![Kpi](KPI.jpg)
 
 
 
