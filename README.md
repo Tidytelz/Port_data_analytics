@@ -13,7 +13,7 @@ Insights and recommendations are presented across three key aspects:
 * **Environmental influence**: Analysis of the effects of environmental factors, such as wind speed, on the estimated wave parameters.
 * **Suitability of method application**: Assessment of historical trends to identify periods most suitable for the application of the proposed methodology.
 
-An interactive Power BI dashboard can be downloaded (here)  
+An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)  
 SQL queries to clean, organise, and prepare data for the dashboard can be found (here)  
 Targeted DAX queries regarding research or business questions can be found (here)  
 
