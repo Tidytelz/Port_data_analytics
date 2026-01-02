@@ -2,8 +2,8 @@
 DROP TABLE IF EXISTS New_video_2025;
 
 CREATE TABLE New_video_2025 (
-    Date_time VARCHAR(20),
-    Hs_vid FLOAT
+    dt VARCHAR(20),
+    Raw_vid FLOAT
    
 );
 
@@ -13,10 +13,10 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 ROWS
-(@Date_time, @Hs_vid)
+(@dt, @Raw_vid)
 SET
-    Date_time = NULLIF(@Date_time, ''),
-    Raw_Hs = NULLIF(@Hs_vid, '')
+    Date_time = NULLIF(@dt, ''),
+    Raw_Hs = NULLIF(@Raw_vid, '')
    
  ;
  
