@@ -1,0 +1,36 @@
+
+1. Average significant wave height:
+ 
+Average Hs_M = AVERAGE(All_data[Hs])
+
+
+
+2. Coefficient of determination:
+
+R² WS vs Hs_vid = 
+VAR r = DIVIDE(
+    SUMX('All_data', ('All_data'[WS] - AVERAGE('All_data'[WS])) * ('All_data'[Hs_vid] - AVERAGE('All_data'[Hs_vid]))),
+    SQRT(SUMX('All_data', POWER('All_data'[WS] - AVERAGE('All_data'[WS]), 2)) * SUMX('All_data', POWER('All_data'[Hs_vid] - AVERAGE('All_data'[Hs_vid]), 2)))
+)
+RETURN
+POWER(r, 2)
+
+
+3. Mean Percentage error: 
+
+MAPE = 
+AVERAGEX(
+    'All_data',
+    ABS(('All_data'[Hs] - 'All_data'[Hs_vid]) / 'All_data'[Hs])
+)
+
+
+4. Total percentage of wind speed less than 7m/s
+
+Vel < 7m/s = 
+DIVIDE(
+    SUM('Wind_data (2)'[low_wind_count]),
+    SUM('Wind_data (2)'[total_count])
+)
+
+
