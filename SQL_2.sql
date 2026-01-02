@@ -1,3 +1,6 @@
+-- Video- and model-derived wave data ingestion (2025)
+-- Extraction and temporal alignment of significant wave height estimates
+
 SELECT 
     vd.dt AS Date_time,
     vd.Raw_Hs AS Hs_vid,
@@ -45,6 +48,12 @@ JOIN New_synthetic_2025 AS sd ON TRIM(sd.dt) = TRIM(vd.dt)
 JOIN new_wind_2025 AS w ON TRIM(w.dt) = TRIM(vd.dt)
 
 ORDER BY Date_time, category;
+
+
+
+-- Historical wind speed data processing (2015–2024)
+-- Filtering wind speed values below 7 m/s
+-- Computation of occurrence percentage
 
 WITH LowWind AS (
     SELECT 
