@@ -34,9 +34,10 @@ Hs_vid exhibits a consistent pattern across all Hs_M cases, indicating that the 
 *Video-derived vs. model-predicted significant wave heights showing R² = 0.94 and 97.5% agreement (Bias = 0.03m, RMSE = 0.17m)*
 
 
-Again, Wind speed exhibits a more consistent pattern across all Hs_M cases, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
+Wind speed exhibits a more consistent pattern for Hs_vid, with an R² value of 0.3, indicating that wind-driven wave generation explains approximately 30% of the variance in wave height. Other contributing factors may include wave model accuracy, wave transformations during shoaling, bathymetric effects, and swell propagation from distant sources.
+Notably, discrepancies in Hs_vid increase when wind speed exceeds 7 m/s, which can be attributed to two primary factors: (1) whitecap formation during rough sea states, and (2) camera shake induced by strong winds. Since the methodology measures the inverted shadow characteristics of wave features, any high-intensity features (e.g., breaking waves or whitecaps) within the measurement area result in inaccurate estimation. Additionally, camera shake degrades feature detection accuracy, further compromising measurement quality under high wind conditions.  
 
-![Kpi](KPI.jpg)
+![Kpi](KPI_Vel.jpg)
 
 
 
