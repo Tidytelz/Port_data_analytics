@@ -13,8 +13,8 @@ Insights and recommendations are presented across three key aspects:
 * **Environmental influence**: Analysis of the effects of environmental factors, such as wind speed, on the estimated wave parameters.
 * **Suitability of method application**: Assessment of historical trends to identify periods most suitable for the application of the proposed methodology.
 
-Papers on the wave height estimation methodology can be downloaded [here]
-An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)  
+Papers on the wave height estimation methodology can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/blob/c9f2df0c0462e76daa0aa42b3290b9be17e91253/WP8_Wave%20Height%20Estimation%20Methods%20for%20Non-Breaking%20Waves%20Using%20Video%20Images.pdf)  
+An interactive Power BI dashboard can be downloaded [here](https://github.com/Tidytelz/Port_data_analytics/raw/refs/heads/main/Validation_dashboard.pbix)    
 SQL queries for database setup and data loading can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/c3919d1fdf46af11c72cdd80b4b1bfb523b1c926/SQL_1.sql)     
 SQL queries loading to organise and prepare data for the dashboard can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/b1eac36ec943c417a2bcb074016142611ce3956a/SQL_2.sql)  
 Targeted DAX queries regarding research or business questions can be found [here](https://github.com/Tidytelz/Port_data_analytics/blob/87eb33f944d1533dca42086b196cfc1dc310fd3d/DAX.txt)    
