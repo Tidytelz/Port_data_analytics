@@ -10,8 +10,8 @@
 This project validates a novel wave measurement methodology using video analytics and statistical modeling at the Port of Sines, Portugal. By processing **15,000 video frames** and applying rigorous statistical validation against wave model outputs, this work demonstrates how advanced data analysis can deliver reliable coastal monitoring at a fraction of traditional sensor costs.
 
 **Key Metrics:**
-- 📊 **Dataset Size**: 50 video sequences (10 minutes each, 30 fps)
-- 🎯 **Accuracy**: MAPE 32-33% for nearshore wave height estimation
+- 📊 Dataset: 300 concurrent measurements containing Hs_vid, Hs_M1-M3, timestamps, and wind speeds (March 2025)
+- 📈 Historical Context: 359,712 wind records (2015-2024) for long-term operational feasibility analysis
 - ⚡ **Availability**: 65-75% annual operational capability (2015-2024 analysis)
 - 💰 **Cost Impact**: Significant reduction vs. permanent ADCP installations (~€50k-100k)
 
