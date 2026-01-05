@@ -31,40 +31,6 @@ Part of the **NEXUS Agenda** project focusing on digital transition at the Port 
 
 ---
 
-## Technical Approach & Data Pipeline
-
-### Data Sources
-
-**1. Video Data (March 2024)**
-- 50 ten-minute recordings from a fixed camera installation
-- 15,000 frames processed at 30 fps
-- Shadow-based feature extraction algorithm applied per frame
-- Aggregated to significant wave height (Hs_vid) per 10-minute sequence
-
-**2. Wave Model Data (SIMAR-44)**
-- Hourly wave height predictions: March 2025
-- Three model variants (Hs_M1, Hs_M2, Hs_M3) for validation comparison
-- Sourced from Puertos del Estado (Spanish meteorological agency)
-
-**3. Wind Speed Data**
-- Concurrent wind measurements (2025) for correlation analysis
-- Historical records (2015-2024) for long-term operational feasibility assessment
-
-### Analytical Methods
-
-**Statistical Validation:**
-- Mean Absolute Percentage Error (MAPE) calculations
-- Correlation analysis (R² coefficients)
-- Time-series pattern recognition
-- Comparative trend analysis across model variants
-
-**Data Management:**
-- MySQL database design for multi-source integration
-- ETL pipeline for video-to-structured data transformation
-- Power BI dashboard with custom DAX measures for KPI tracking
-
----
-
 ## Key Findings & Insights
 
 ### 1️⃣ **Method Reliability**
@@ -200,33 +166,6 @@ Custom calculations for wave height statistics, wind correlations, and operation
 
 ---
 
-## Skills Demonstrated
-
-**Data Analysis & Statistics:**
-- Time-series analysis and pattern recognition
-- Statistical validation (MAPE, R², correlation analysis)
-- Multi-variate analysis (wave height, wind speed, environmental factors)
-- Long-term trend analysis and forecasting
-
-**Data Engineering:**
-- ETL pipeline design for video-to-structured data
-- MySQL database architecture for multi-source integration
-- Data quality control and validation frameworks
-
-**Business Intelligence:**
-- Power BI dashboard development
-- Custom DAX measure creation for KPIs
-- Data visualization for stakeholder communication
-- Translating technical findings into business insights
-
-**Technical Tools:**
-- SQL (MySQL)
-- Power BI & DAX
-- Statistical analysis
-- Data modeling and validation
-
----
-
 ## About This Project
 
 This analysis was conducted as part of my PhD research in coastal engineering, focusing on the intersection of **computer vision, statistical modeling, and operational decision support**. The project demonstrates my ability to:
@@ -250,5 +189,3 @@ PhD Researcher | Coastal Engineering & Data Analytics
 
 ---
 
-**License**: [Choose appropriate license]  
-**Citation**: If you use this methodology, please cite [paper reference]
