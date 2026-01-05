@@ -183,8 +183,8 @@ This analysis was conducted as part of my PhD research in coastal engineering, f
 **Cyril Ngene**  
 PhD Researcher | Coastal Engineering & Data Analytics  
 📧 Tochukwu07@gmail.com  
-💼 [linkedin.com/in/tochukwu-ngene-3450a1117]  
-💻 [GitHub Portfolio](https://github.com/Tidytelz)
+💼 [Linkedin](linkedin.com/in/tochukwu-ngene-3450a1117)  
+💻 [GitHub Portfolio](https://github.com/Tidytelz)  
 *Interested in discussing coastal monitoring analytics, video-based measurement systems, or general data-driven solutions? Let's connect!*
 
 ---
