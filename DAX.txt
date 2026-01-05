@@ -1,36 +1,121 @@
+// ============================================================================
+// DAX MEASURES FOR WAVE HEIGHT VALIDATION ANALYSIS
+// Port of Sines - Video-Based Wave Measurement System
+// ============================================================================
 
-1. Average significant wave height:
- 
-Average Hs_M = AVERAGE(All_data[Hs])
+// ----------------------------------------------------------------------------
+// 1. DESCRIPTIVE STATISTICS
+// ----------------------------------------------------------------------------
+
+// Average significant wave height from model data
+Average_Hs_M = 
+    AVERAGE(All_data[Hs])
+
+// Average video-derived wave height
+Average_Hs_vid = 
+    AVERAGE(All_data[Hs_vid])
+
+// Average wind speed
+Average_WS = 
+    AVERAGE(All_data[WS])
 
 
+// ----------------------------------------------------------------------------
+// 2. ACCURACY METRICS
+// ----------------------------------------------------------------------------
 
-2. Coefficient of determination:
+// Mean Absolute Percentage Error (MAPE) - Hs_vid vs Hs_M
+MAPE_Hs = 
+    AVERAGEX(
+        All_data,
+        ABS((All_data[Hs] - All_data[Hs_vid]) / All_data[Hs])
+    )
 
-R² WS vs Hs_vid = 
-VAR r = DIVIDE(
-    SUMX('All_data', ('All_data'[WS] - AVERAGE('All_data'[WS])) * ('All_data'[Hs_vid] - AVERAGE('All_data'[Hs_vid]))),
-    SQRT(SUMX('All_data', POWER('All_data'[WS] - AVERAGE('All_data'[WS]), 2)) * SUMX('All_data', POWER('All_data'[Hs_vid] - AVERAGE('All_data'[Hs_vid]), 2)))
-)
+// MAPE as percentage (for display)
+MAPE_Percentage = 
+    FORMAT([MAPE_Hs], "0.0%")
+
+
+// ----------------------------------------------------------------------------
+// 3. CORRELATION ANALYSIS
+// ----------------------------------------------------------------------------
+
+// Coefficient of Determination (R²) - Wind Speed vs Hs_vid
+R2_WS_vs_Hs_vid = 
+VAR Correlation = 
+    DIVIDE(
+        SUMX(
+            All_data, 
+            (All_data[WS] - [Average_WS]) * (All_data[Hs_vid] - [Average_Hs_vid])
+        ),
+        SQRT(
+            SUMX(All_data, POWER(All_data[WS] - [Average_WS], 2)) * 
+            SUMX(All_data, POWER(All_data[Hs_vid] - [Average_Hs_vid], 2))
+        )
+    )
 RETURN
-POWER(r, 2)
+    POWER(Correlation, 2)
+
+// Correlation Coefficient (r) - Wind Speed vs Hs_vid
+r_WS_vs_Hs_vid = 
+    DIVIDE(
+        SUMX(
+            All_data, 
+            (All_data[WS] - [Average_WS]) * (All_data[Hs_vid] - [Average_Hs_vid])
+        ),
+        SQRT(
+            SUMX(All_data, POWER(All_data[WS] - [Average_WS], 2)) * 
+            SUMX(All_data, POWER(All_data[Hs_vid] - [Average_Hs_vid], 2))
+        )
+    )
 
 
-3. Mean Percentage error: 
+// ----------------------------------------------------------------------------
+// 4. OPERATIONAL FEASIBILITY
+// ----------------------------------------------------------------------------
 
-MAPE = 
-AVERAGEX(
-    'All_data',
-    ABS(('All_data'[Hs] - 'All_data'[Hs_vid]) / 'All_data'[Hs])
-)
+// Percentage of time with favorable wind conditions (WS < 7 m/s)
+Operational_Availability = 
+    DIVIDE(
+        SUM(Wind_data[low_wind_count]),
+        SUM(Wind_data[total_count])
+    )
+
+// Operational availability as percentage (for display)
+Operational_Availability_Pct = 
+    FORMAT([Operational_Availability], "0.0%")
+
+// Total count of favorable conditions
+Favorable_Days_Count = 
+    SUM(Wind_data[low_wind_count])
+
+// Total days analyzed
+Total_Days_Analyzed = 
+    SUM(Wind_data[total_count])
 
 
-4. Total percentage of wind speed less than 7m/s
+// ----------------------------------------------------------------------------
+// 5. DATA QUALITY INDICATORS
+// ----------------------------------------------------------------------------
 
-Vel < 7m/s = 
-DIVIDE(
-    SUM('Wind_data (2)'[low_wind_count]),
-    SUM('Wind_data (2)'[total_count])
-)
+// Count of valid measurements
+Valid_Measurements = 
+    COUNTROWS(
+        FILTER(
+            All_data,
+            NOT(ISBLANK(All_data[Hs_vid])) && 
+            NOT(ISBLANK(All_data[Hs]))
+        )
+    )
+
+// Percentage of valid data
+Data_Completeness = 
+    DIVIDE(
+        [Valid_Measurements],
+        COUNTROWS(All_data)
+    )
 
 
+// ============================================================================
+// END OF DAX MEASURES
+// ============================================================================
