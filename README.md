@@ -170,7 +170,7 @@ Custom calculations for wave height statistics, wind correlations, and operation
 
 This analysis was conducted as part of my PhD research in coastal engineering, focusing on the intersection of **computer vision, statistical modeling, and operational decision support**. The project demonstrates my ability to:
 
-- Process large-scale datasets (15k records)
+- Process large-scale datasets (15k frames, 300 sequences)
 - Design end-to-end analytical pipelines
 - Validate methodologies through rigorous statistical testing
 - Communicate technical findings to non-technical stakeholders
@@ -184,7 +184,7 @@ This analysis was conducted as part of my PhD research in coastal engineering, f
 PhD Researcher | Coastal Engineering & Data Analytics  
 📧 Tochukwu07@gmail.com  
 💼 [linkedin.com/in/tochukwu-ngene-3450a1117]  
-
+💻 [GitHub Portfolio](https://github.com/Tidytelz)
 *Interested in discussing coastal monitoring analytics, video-based measurement systems, or general data-driven solutions? Let's connect!*
 
 ---
